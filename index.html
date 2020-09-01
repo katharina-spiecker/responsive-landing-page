@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company X</title>
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- sticky section: promobar, logo and naviagtion items -->
+    <div class="navigation_wrapper">
+
+        <nav class="navigation">
+
+            <div class="nav-logo">
+                <a id="ngl-link" href="#"><img src="./images/companyX_logo.png" alt="logo" class="logo"></a>
+            </div>
+
+            <ul class="list">
+
+                <li class="item" id="clothes"><a href='#'>Clothes</a></li>
+                <li class="item" id="care"><a href='#'>Personal Care</a></li>
+                <li class="item" id="living"><a href="#">Living</a></li>
+                <li class="item"><a href="#">SHOP</a></li>
+                <li class="item"><a href="" style="font-weight: bold;">SALE</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- header picture -->
+
+    <header class="header">
+        <a id="header-link" href="#">
+            <picture>
+                <!--header picture for mobile-->
+                <source class="mobile-header" media="(max-width:600px)" srcset="./images/header_660x564.jpg">
+                <!--header picture for tablet-->
+                <source class="ipad-header" media="(max-width:768px)" srcset="./images/header_768x564.jpg">
+                <!--header picture for desktop-->
+                <source class="desktop-header" media="(min-width:769px)" srcset="./images/header_1920x1190.jpg">
+                <!--default header picture is the desktop one (needed in case browser doesnt support the ones above)-->
+                <img class="desktop-header" src="./images/header_1920x1280.jpg" alt="">
+            </picture>
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- usp section starts here -->
+
+        <section class="usps orientation">
+
+            <div class="usps__content orientation">
+
+                <div class="usp">
+                    <div class="usp-logo">
+                        <img src="./images/delivery-truck.png" alt="delivery icon">
+                    </div>
+
+                    <div class="usp-desc">
+                        <p class="usp__desc">Free Returns</p>
+                    </div>
+                </div>
+
+                <div class="usp">
+                    <div class="usp-logo">
+                        <img src="./images/legal-agreement-contract-paper.png" alt="certification icon">
+                    </div>
+
+                    <div class="usp-desc">
+                        <p class="usp__desc">COSMOS-Bio-Approved</p>
+                    </div>
+
+                </div>
+
+                <div class="usp">
+                    <div class="usp-logo">
+                        <img src="./images/house.png" alt="chemistry icon">
+                    </div>
+
+                    <div class="usp-desc">
+                        <p class="usp__desc">Created in Berlin</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- product overview starts here -->
+
+        <section class="products" id="product-overview">
+
+            <h2 class="products__headline">Product Range</h2>
+
+            <div class="products-content orientation">
+
+                <div class="product">
+                    <div class="product-uppersection">
+                        <a class="link-product-oil" href="#">
+                            <h2 class="product__title">Clothes</h2>
+                        </a>
+                        <div class="product-image-section">
+                            <a class="link-product-oil" href="#"><img src="./images/fashion_900x900.jpg" alt=""></a>
+                        </div>
+                        <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit
+                            distinctio molestias cum, dolores saepe vitae tenetur qui repellat, voluptates corporis,
+                            sequi unde laborum</p>
+                    </div>
+                    <a class="link-product-oil btn-dark" href="#">Discover now</a>
+                </div>
+
+                <div class="product">
+                    <div class="product-uppersection">
+                        <a class="link-product-bath" href="#">
+                            <h2 class="product__title">Personal Care</h2>
+                        </a>
+                        <div class="product-image-section">
+                            <a class="link-product-bath" href="#"><img src="./images/wellness_900x900.jpg" alt=""></a>
+                        </div>
+                        <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit
+                            distinctio molestias cum, dolores saepe vitae tenetur qui repellat, voluptates corporis,
+                            sequi unde laborum</p>
+                    </div>
+                    <a class="link-product-bath btn-dark" href="#">Discover now</a>
+                </div>
+
+                <div class="product">
+                    <div class="product-uppersection">
+                        <a class="link-product-care" href="#">
+                            <h2 class="product__title">Living</h2>
+                        </a>
+                        <div class="product-image-section">
+                            <a class="link-product-care" href="#"><img src="./images/living_900x900.png" alt=""></a>
+                        </div>
+                        <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit
+                            distinctio molestias cum, dolores saepe vitae tenetur qui repellat, voluptates corporis,
+                            sequi unde laborum</p>
+                    </div>
+                    <a class="link-product-care btn-dark" href="#">Discover now</a>
+                </div>
+
+                <div class="product">
+                    <div class="product-uppersection">
+                        <a class="link-product-nutrition" href="#">
+                            <h2 class="product__title">SALE</h2>
+                        </a>
+                        <div class="product-image-section">
+                            <a class="link-product-nutrition" href="#"><img src="./images/sale_900x900.jpg" alt=""></a>
+                        </div>
+                        <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit,
+                            debitis assumenda asperiores molestias recusandae doloribus optio omnis. Blanditiis nisi
+                            tenetur et eos expedita. </p>
+                    </div>
+                    <a class="link-product-nutrition btn-dark" href="#">Discover now</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="promo">
+
+            <h2>Promocode: X2020 for 20% Discount</h2>
+
+            <p>For a limited time only</p>
+
+            <a id="promo-link" href="#">Use now!</a>
+
+        </section>
+
+        <!-- new garden lab section starts here -->
+
+        <section class="brand orientation">
+
+            <div class="brand__wrapper">
+                <div class="brand__wrapper__content">
+                    <p class="brand__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, incidunt
+                        quod. Voluptatum assumenda quaerat at quidem laboriosam ratione, maxime odit optio, possimus
+                        placeat natus hic culpa nesciunt rerum, deleniti ipsum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Nemo quidem aperiam repellat porro quaerat, quibusdam culpa veniam neque optio
+                        reiciendis nostrum, omnis quas itaque corrupti hic!</p>
+                    <a id="ngl-link" class="btn-light" href="#">Learn more</a>
+                </div>
+            </div>
+
+            <div class="brand__picture">
+                <img src="./images/interior_1080x1080.png" alt="">
+            </div>
+
+        </section>
+
+        <!-- Herbliz section starts here -->
+
+        <section class="herbliz orientation">
+
+            <div class="herbliz__picture">
+                <img src="./images/flower_1080.jpg" alt="">
+            </div>
+
+            <div class="herbliz__wrapper">
+                <div class="herbliz__wrapper__content">
+                    <p class="herbliz__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, incidunt
+                        quod. Voluptatum assumenda quaerat at quidem laboriosam ratione, maxime odit optio, possimus
+                        placeat natus hic culpa nesciunt rerum, deleniti ipsum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Nemo quidem aperiam repellat porro quaerat, quibusdam culpa veniam neque optio
+                        reiciendis nostrum, omnis quas itaque corrupti hic!
+                    </p>
+                    <a id="link-herbliz" class="btn-light" href="#">Discover now</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- FAQ section starts here -->
+
+        <section class="faq" id="faq">
+
+            <h2 class="faq__title">FAQ - FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="faq-wrapper">
+                <button type="button" class="question">How does this product help me?</button>
+                <div class="answer">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias soluta impedit id! Eveniet
+                        maiores facere fugit eius laboriosam, saepe in, explicabo placeat enim minima est molestiae
+                        neque sit qui! Labore?
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <button type="button" class="question">What is the benefits?</button>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab veritatis error a laudantium
+                        saepe ratione earum nisi reiciendis consequatur, nemo ipsum deserunt commodi cumque dignissimos
+                        quod optio et delectus?</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <button type="button" class="question">How fast does it work?</button>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam adipisci sed, quod nostrum
+                        voluptate perferendis velit minus, reprehenderit pariatur unde dolor nesciunt ipsam. Distinctio
+                        perspiciatis facilis quia, autem numquam dolor.</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <button type="button" class="question">Where do the products come from?</button>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit perferendis ipsam
+                        obcaecati eum magnam. Fugit quidem excepturi, consequuntur voluptatem quae tempora cupiditate
+                        dolorem suscipit! Laboriosam eum est numquam molestiae?</p>
+                </div>
+            </div>
+
+            <div class="faq-wrapper">
+                <button type="button" class="question">What are the experiences with X products?</button>
+                <div class="answer">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur ut cupiditate
+                        cumque voluptatibus? Neque minima ipsum fuga, doloremque tempora nesciunt, provident placeat
+                        ullam reprehenderit laudantium, facilis repudiandae modi eligendi.</p>
+                </div>
+            </div>
+
+
+
+    </main>
+
+    <!-- the footer is the black section at the bottom that conatins the product & company links + social media -->
+
+    <footer class="footer">
+
+        <div class="footer-container orientation">
+
+            <div class="footer-nav-container">
+                <div class="footer-nav">
+                    <p>Products</p>
+                    <a class="footer-nav-link" href="#">Clothes</a>
+                    <a class="footer-nav-link" href="#">Personal Care</a>
+                    <a class="footer-nav-link" href="#">Living</a>
+                </div>
+
+                <div class="footer-nav">
+                    <p>Business</p>
+                    <a id="footer-contact-link" href="#">Contact Us</a>
+                    <a id="footer-find-shop-link" href="#">Our Stores</a>
+                    <a id="footer-about-us-link" href="#">About Us</a>
+                </div>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="social-media-icons">
+                    <a class="social-media-link" href="#"> <img src="./images/insta-light.svg" alt="instagram logo">
+                    </a>
+                    <a class="social-media-link" href="#"> <img src="./images/facebook-icon.svg" alt="facebook logo">
+                    </a>
+                </div>
+                <p class="footer-text">&copy; 2020 Company X</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+    <!-- the script is needed for the interactive FAQ section -->
+    <script>
+        var coll = document.getElementsByClassName("question");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "inline-block") {
+                    content.style.display = "none";
+                    // to fold back in
+                } else {
+                    content.style.display = "inline-block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "LP",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katharina-spiecker/responsive-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katharina-spiecker/responsive-landing-page/issues"
+  },
+  "homepage": "https://katharina-spiecker.github.io/responsive-landing-page",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
