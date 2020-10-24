@@ -6,58 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company X</title>
-    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
+    <header>
+            <nav class="navigation_wrapper">      
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" class="logo"></a>   
+                <ul class="list">
+                    <li class="item" id="clothes"><a href='#'>Clothes</a></li>
+                    <li class="item" id="care"><a href='#'>Personal Care</a></li>
+                    <li class="item" id="living"><a href="#">Living</a></li>
+                    <li class="item"><a href="#">SHOP</a></li>
+                    <li class="item"><a href="" style="font-weight: bold;">SALE</a></li>
+                </ul>
+            </nav>
 
-    <!-- sticky section: promobar, logo and naviagtion items -->
-    <div class="navigation_wrapper">
-
-        <nav class="navigation">
-
-            <div class="nav-logo">
-                <a id="ngl-link" href="#"><img src="./images/companyX_logo.png" alt="logo" class="logo"></a>
-            </div>
-
-            <ul class="list">
-
-                <li class="item" id="clothes"><a href='#'>Clothes</a></li>
-                <li class="item" id="care"><a href='#'>Personal Care</a></li>
-                <li class="item" id="living"><a href="#">Living</a></li>
-                <li class="item"><a href="#">SHOP</a></li>
-                <li class="item"><a href="" style="font-weight: bold;">SALE</a></li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-    <!-- header picture -->
-
-    <header class="header">
-        <a id="header-link" href="#">
-            <picture>
-                <!--header picture for mobile-->
-                <source class="mobile-header" media="(max-width:600px)" srcset="./images/header_660x564.jpg">
-                <!--header picture for tablet-->
-                <source class="ipad-header" media="(max-width:768px)" srcset="./images/header_768x564.jpg">
-                <!--header picture for desktop-->
-                <source class="desktop-header" media="(min-width:769px)" srcset="./images/header_1920x1190.jpg">
-                <!--default header picture is the desktop one (needed in case browser doesnt support the ones above)-->
-                <img class="desktop-header" src="./images/header_1920x1280.jpg" alt="">
-            </picture>
-        </a>
-
+            <h1><span id="header-title-1">discover. </span> <span id="header-title-2">reinvent. </span> <span id="header-title-3">become. </span></h1>
     </header>
 
     <main>
-
-        <!-- usp section starts here -->
-
         <section class="usps orientation">
 
             <div class="usps__content orientation">

@@ -9,6 +9,10 @@ body {
     --tertiary-color: #660F58;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h2 {
     font-family: EffraRegular, sans-serif;
 }
@@ -58,36 +62,27 @@ h2 {
     
 }
 
-/* promobar */
-
 .navigation_wrapper {
     position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
     z-index: 2; 
-}
-
-/* navigation bar starts here*/
-
-.navigation {
     display: flex; 
-    /* space between logo and navigation menu*/
     justify-content: space-between; 
     align-items: center; 
     padding: .5rem 2rem; 
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.363);  
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.096);  
     box-sizing: border-box;
 }
 
-.nav-logo {
+.navbar-brand {
     width: 15%;
 }
 
-.nav-logo img {
+.navbar-brand img {
     width: 100%;
-    height: auto;
 }
 
 .list {
@@ -113,18 +108,44 @@ h2 {
     color: var(--primary-color);
 }
 
-
-
-/* header section starts here */
-
-.desktop-header, .ipad-header, .mobile-header{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
+header {
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+    background-image: url('./images/illustration-watercolor-sm.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 
+header h1 {
+    font-size: 2.4rem;
+    margin-left: 10%;
+}
+
+#header-title-1 {
+    color: #a78e9a;
+}
+
+#header-title-2 {
+    color: #51beae;
+}
+
+#header-title-3 {
+    color: #8c6faf;
+}
+
+
 @media only screen and (max-width: 768px) {
+
+    header {
+        background-position: bottom;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin: -100px auto 0px auto;
+    }
 
     .promobar_navigation_wrapper {
         position: fixed;
@@ -134,12 +155,12 @@ h2 {
         z-index: 2; 
     }
 
-    .navigation {
+    .navigation_wrapper {
         padding: .2rem 1rem; 
     }
 
-    .nav-logo {
-        width: 40%;
+    .navbar-brand {
+        width: 25%;
     }
 
     .list {
@@ -154,29 +175,13 @@ h2 {
     .item {
         padding: .1rem;
         margin-left: .4rem;
-        font-size: .8rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    
-    .header {
-        margin-top: 15%;
-    }
-
-    .mobile-header {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-        
-    }
-}
-
-/* unique selling points (underneath header picture) section starts here*/
 
 .usps {
     justify-content: center;
+    background-color: #fff;
 }
 
 .usps__content {
@@ -191,9 +196,7 @@ h2 {
     width: 15%;
     display: flex;
     flex-direction: column;
-    /* center icons with text*/
     align-items: center;
-    /* for text */
     text-align: center;
 }
 
@@ -207,8 +210,6 @@ h2 {
     height: auto;
     display: block;
 }
-
-/* responsive section */
 
 @media only screen and (max-width: 600px) {
 
@@ -659,7 +660,7 @@ h2 {
 
 /* responsive section */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
 
     .footer {
         padding: 1rem; 
@@ -671,9 +672,13 @@ h2 {
         box-sizing: border-box;
     }
 
+    .footer-nav-container {
+        width: 70%
+    }
+
+ 
+
 }
-
-
 
 
 
